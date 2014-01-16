@@ -3,3 +3,6 @@
 [user]
 	email = account@jakecleary.net
 	name = clear-y
+[alias]
+	st = status
+	pom = 'push origin master'
