@@ -5,4 +5,7 @@
 	name = clear-y
 [alias]
 	st = status
-	pom = 'push origin master'
+	ad = add -A
+	co = commit -m
+	ca = commit -am
+	pu = push
