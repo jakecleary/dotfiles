@@ -1,2 +1,5 @@
 [color]
 	ui = true
+[user]
+	email = account@jakecleary.net
+	name = clear-y
