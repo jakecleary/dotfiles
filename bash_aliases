@@ -21,3 +21,10 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # too lazy to git proper
 alias g='git'
+
+# get back!
+# Quicker navigation
+alias b="cd .."
+alias bb="cd ../.."
+alias bbb="cd ../../.."
+alias bbbb="cd ../../../.."
