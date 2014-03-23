@@ -23,8 +23,11 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias g='git'
 
 # get back!
-# Quicker navigation
+# quicker navigation
 alias b="cd .."
 alias bb="cd ../.."
 alias bbb="cd ../../.."
 alias bbbb="cd ../../../.."
+
+# apache/general server stuff
+alias hosts="sudo subl /etc/hosts"
