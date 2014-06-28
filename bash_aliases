@@ -29,5 +29,9 @@ alias bb="cd ../.."
 alias bbb="cd ../../.."
 alias bbbb="cd ../../../.."
 
+# key directories
+alias pp="cd ~/pp"
+alias wp="cd ~/wp"
+
 # apache/general server stuff
 alias hosts="sudo subl /etc/hosts"
