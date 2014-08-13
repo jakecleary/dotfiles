@@ -1,44 +1,59 @@
 #!/bin/bash
-############################
+
+#
 # init.sh
-# This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
-############################
+# =======
+# This script creates symlinks from the home directory
+# to any desired dotfiles in ~/dotfiles.
+#
 
-########## Variables
+#
+# Variables
+#
 
-# dotfiles directory
+# Dotfiles directory:
 dir=~/dotfiles
-# old dotfiles backup directory
+# Backup the currently present dotfiles to this folder:
 olddir=~/dotfiles_old
-# list of files/folders to symlink in homedir
-dotfiles="bash_profile profile bashrc bash_aliases gitconfig hushlogin"
+# List of files/folders to symlink in homedir
+dotfiles="bash_profile bashrc bash_aliases gitconfig hushlogin"
 # regular files of the non dotted variety
 files="z.sh"
 
-##########
+#
+# Start
+#
 
-# create dotfiles_old in homedir
+# Create dotfiles_old in homedir
 echo -n "Creating $olddir for backup of any existing dotfiles in ~ ..."
 mkdir -p $olddir
 echo "done"
 
-# change to the dotfiles directory
+# Change to the dotfiles directory
 echo -n "Changing to the $dir directory ..."
 cd $dir
 echo "done"
 
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
+# Move any existing dotfiles in homedir to dotfiles_old directory, then create
+# symlinks from the homedir to any files in the ~/dotfiles directory
+# specified in $files.
 for dotfile in $dotfiles; do
     echo "Moving any existing dotfiles from ~ to $olddir"
+    sleep 3
     mv ~/.$dotfile ~/dotfiles_old/
     echo "Creating symlink to $file in home directory."
+    sleep 3
     ln -s $dir/$dotfile ~/.$dotfile
 done
 
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
+# Move any existing files in homedir to dotfiles_old directory, then
+# create symlinks from the homedir to any files in the ~/dotfiles directory
+# specified in $files.
 for file in $files; do
     echo "Moving any existing files from ~ to $olddir"
+    sleep 3
     mv ~/$file ~/dotfiles_old/
     echo "Creating symlink to $file in home directory."
+    sleep 3
     ln -s $dir/$file ~/$file
 done
