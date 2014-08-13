@@ -1,4 +1,4 @@
-# enable color support of ls and also add handy aliases
+# Enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
@@ -10,28 +10,62 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
+# Some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# add an "alert" alias for long running commands.  Use like so:
-# sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+# Open specified files in Sublime Text
+alias subl="open -a 'Sublime Text'"
 
-# too lazy to git proper
+#
+# Git
+# ===
+# A collection of aliases and functions related to Git.
+#
+
+# Three letter is just too much
 alias g='git'
 
-# get back!
-# quicker navigation
+# Clone from github quickly
+function ghclone()
+{
+    git clone http://github.com/"$*"
+}
+
+#Clone from bitbucket easily
+function bbclone()
+{
+    git clone http://bitbucket.org/"$*"
+}
+
+#
+# Key directories
+# ===============
+# These are directories that I frequently access.
+#
+
+# Personal projects
+alias pp="cd ~/pp"
+
+# Work projects
+alias wp="cd ~/wp"
+
+#
+# Misc
+# ====
+# Random aliases that don;t have a home.
+#
+
+# Go back a directory easily.
 alias b="cd .."
 alias bb="cd ../.."
 alias bbb="cd ../../.."
 alias bbbb="cd ../../../.."
 
-# key directories
-alias pp="cd ~/pp"
-alias wp="cd ~/wp"
+# Apache/general server stuff
+alias hosts="sudo atom /etc/hosts"
 
-# apache/general server stuff
-alias hosts="sudo subl /etc/hosts"
+# Show/Hide hidden files
+alias sF="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
+alias hF="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
