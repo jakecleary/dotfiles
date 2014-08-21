@@ -27,18 +27,6 @@ alias subl="open -a 'Sublime Text'"
 # Three letter is just too much
 alias g='git'
 
-# Clone from github quickly
-function ghclone()
-{
-    git clone http://github.com/"$*"
-}
-
-#Clone from bitbucket easily
-function bbclone()
-{
-    git clone http://bitbucket.org/"$*"
-}
-
 #
 # Key directories
 # ===============
