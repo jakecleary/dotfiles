@@ -47,7 +47,7 @@ alias wp="cd ~/wp"
 alias wp1="curl -O https://wordpress.org/latest.zip"
 alias wp2="unzip latest.zip"
 alias wp3="mv wordpress/* ."
-alias wp4="rm wordpress"
+alias wp4="rm -rf wordpress"
 
 #
 # Misc
