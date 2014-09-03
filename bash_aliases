@@ -40,6 +40,16 @@ alias pp="cd ~/pp"
 alias wp="cd ~/wp"
 
 #
+# Wordpress
+#
+
+# Bit of a convoluted way of getting Wordpress in your current directory
+alias wp1="curl -O https://wordpress.org/latest.zip"
+alias wp2="unzip latest.zip"
+alias wp3="mv wordpress/* ."
+alias wp4="rm wordpress"
+
+#
 # Misc
 # ====
 # Random aliases that don;t have a home.
