@@ -39,10 +39,10 @@ echo "done"
 # specified in $files.
 for dotfile in $dotfiles; do
     echo "Moving any existing dotfiles from ~ to $olddir"
-    sleep 3
+    sleep .5
     mv ~/.$dotfile ~/dotfiles_old/
     echo "Creating symlink to $file in home directory."
-    sleep 3
+    sleep .5
     ln -s $dir/$dotfile ~/.$dotfile
 done
 
@@ -51,9 +51,9 @@ done
 # specified in $files.
 for file in $files; do
     echo "Moving any existing files from ~ to $olddir"
-    sleep 3
+    sleep .5
     mv ~/$file ~/dotfiles_old/
     echo "Creating symlink to $file in home directory."
-    sleep 3
+    sleep .5
     ln -s $dir/$file ~/$file
 done
