@@ -50,6 +50,12 @@ alias wp3="mv wordpress/* ."
 alias wp4="rm -rf wordpress"
 
 #
+# Laravel
+#
+
+alias art="php artisan"
+
+#
 # Misc
 # ====
 # Random aliases that don;t have a home.
