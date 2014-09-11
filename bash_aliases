@@ -44,7 +44,7 @@ alias wp="cd ~/wp"
 #
 
 # Bit of a convoluted way of getting Wordpress in your current directory
-alias wp="curl -O https://wordpress.org/latest.zip && unzip latest.zip && mv wordpress/* . && rm -rf wordpress"
+alias wordpress="curl -O https://wordpress.org/latest.zip && unzip latest.zip && mv wordpress/* . && rm -rf wordpress && open ."
 
 #
 # Laravel
