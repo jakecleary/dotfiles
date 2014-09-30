@@ -8,6 +8,9 @@
 	ad = add -A
 	co = commit -m
 	ca = commit -am
-	pu = push
+	ch = checkout
+	br = checkout -b
+	log-pretty = log --pretty=oneline --abbrev-commit
+	chekcout = checkout
 [push]
 	default = simple
