@@ -2,7 +2,7 @@
 	ui = true
 [user]
 	email = shout@jakecleary.net
-	name = clear-y
+	name = jakecleary
 [alias]
 	st = status
 	ad = add -A
