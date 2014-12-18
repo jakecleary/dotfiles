@@ -15,9 +15,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# Open specified files in Sublime Text
-alias subl="open -a 'Sublime Text'"
-
 #
 # Git
 # ===
