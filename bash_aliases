@@ -31,17 +31,17 @@ alias g='git'
 #
 
 # Personal projects
-alias pp="cd ~/pp"
+alias p="cd ~/pp"
 
 # Work projects
-alias wp="cd ~/wp"
+alias w="cd ~/wp"
 
 #
 # Wordpress
 #
 
 # Bit of a convoluted way of getting Wordpress in your current directory
-alias wordpress="curl -O https://wordpress.org/latest.zip && unzip latest.zip && mv wordpress/* . && rm -rf wordpress && open ."
+alias wordpress="curl -O https://wordpress.org/latest.zip && unzip latest.zip && mv wordpress/* . && rm -rf wordpress latest.zip && open ."
 
 #
 # Laravel
@@ -67,3 +67,6 @@ alias hosts="sudo atom /etc/hosts"
 # Show/Hide hidden files
 alias sF="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
 alias hF="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
+
+# Use thefuck tool
+alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
