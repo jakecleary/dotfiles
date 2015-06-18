@@ -10,9 +10,11 @@
 	ca = commit -am
 	ch = checkout
 	br = checkout -b
-	log-pretty = log --pretty=oneline --abbrev-commit
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	chekcout = checkout
 [push]
 	default = simple
 [credential]
 	helper = osxkeychain
+[core]
+	editor = vim
