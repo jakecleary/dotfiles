@@ -100,5 +100,5 @@ export PATH="/usr/local/sbin:$PATH"
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-# Load gloabl composer plugins
+# Load global composer plugins
 PATH=~/.composer/vendor/bin:$PATH
