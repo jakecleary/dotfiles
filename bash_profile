@@ -90,6 +90,9 @@ export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 # =====
 #
 
+# Brew's sbin folder
+export PATH="/usr/local/sbin:$PATH"
+
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
