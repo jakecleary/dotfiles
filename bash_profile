@@ -90,6 +90,8 @@ export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 # =====
 #
 
+export PATH="/usr/local/bin:$PATH"
+
 # Brew's sbin folder
 export PATH="/usr/local/sbin:$PATH"
 
@@ -97,8 +99,8 @@ export PATH="/usr/local/sbin:$PATH"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Load NVM
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # Load global composer plugins
 PATH=~/.composer/vendor/bin:$PATH
