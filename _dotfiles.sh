@@ -25,23 +25,23 @@ files="z.sh"
 #
 
 # Create dotfiles_old in homedir
-printf -n "Creating $olddir for backup of any existing dotfiles in ~ ..."
+echo -n "Creating $olddir for backup of any existing dotfiles in ~ ..."
 mkdir -p $olddir
-printf "done"
+echo "done"
 
 # Change to the dotfiles directory
-printf -n "Changing to the $dir directory ..."
+echo -n "Changing to the $dir directory ..."
 cd $dir
-printf "done"
+echo "done"
 
 # Move any existing dotfiles in homedir to dotfiles_old directory, then create
 # symlinks from the homedir to any files in the ~/dotfiles directory
 # specified in $files.
 for dotfile in $dotfiles; do
-    printf "Moving any existing dotfiles from ~ to $olddir"
+    echo "Moving any existing dotfiles from ~ to $olddir"
     sleep .5
     mv ~/.$dotfile ~/dotfiles_old/
-    printf "Creating symlink to $file in home directory."
+    echo "Creating symlink to $file in home directory."
     sleep .5
     ln -s $dir/$dotfile ~/.$dotfile
 done
@@ -50,10 +50,10 @@ done
 # create symlinks from the homedir to any files in the ~/dotfiles directory
 # specified in $files.
 for file in $files; do
-    printf "Moving any existing files from ~ to $olddir"
+    echo "Moving any existing files from ~ to $olddir"
     sleep .5
     mv ~/$file ~/dotfiles_old/
-    printf "Creating symlink to $file in home directory."
+    echo "Creating symlink to $file in home directory."
     sleep .5
     ln -s $dir/$file ~/$file
 done
