@@ -2,7 +2,7 @@
 	ui = true
 [user]
 	email = shout@jakecleary.net
-	name = jakecleary
+	name = Jake Cleary
 [alias]
 	st = status
 	ad = add -A
@@ -18,3 +18,4 @@
 	helper = osxkeychain
 [core]
 	editor = vim
+	excludesfile = /Users/jakecleary/.gitignore_global
