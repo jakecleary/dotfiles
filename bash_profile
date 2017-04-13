@@ -92,6 +92,9 @@ export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 
 export PATH="/usr/local/bin:$PATH"
 
+# use latest php
+export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
+
 # Brew's sbin folder
 export PATH="/usr/local/sbin:$PATH"
 
