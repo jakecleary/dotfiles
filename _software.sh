@@ -25,7 +25,7 @@ brew install git yarn homebrew/php/php71 homebrew/php/composer sqlite
 
 # install binary programs
 printf "\nInstalling binary programs using brew cask…"
-brew cask install github-desktop sourcetree visual-studio-code google-chrome iterm2 spectacle bartender alfred spotify
+brew cask install github-desktop sourcetree visual-studio-code google-chrome iterm2 spectacle bartender alfred spotify postico
 
 # configure ssh
 printf "\nGenerating an SSH key for this machine…"
