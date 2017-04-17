@@ -21,7 +21,7 @@ brew tap caskroom/cask
 
 # install programs
 printf "\nInstalling programs using brew…"
-brew install git yarn homebrew/php/php71 homebrew/php/composer sqlite
+brew install git yarn homebrew/php/php71 homebrew/php/composer sqlite pgcli
 
 # install binary programs
 printf "\nInstalling binary programs using brew cask…"
