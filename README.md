@@ -1,21 +1,15 @@
-#My Dotfiles
+# dotfiles
 
-This is my collection of dotfiles. There are many like it, but this one is mine. It is small, but overtime it will grow into something much bigger.
+Currently a simple backup of some config files I care about.
+This does not do anything fancy, like automated installation or backup.
+It's just a bunch of copy-pasted files, and a list of programs I usually
+install using homebrew, etc.
 
-It features a nicely formatted bash prompt, based off of [Barry Clark's great work](https://github.com/barryclark/bashstrap).
+For the CLI, I use...
 
-There is also a collection of simple aliases for being more efficient with Git.
+- [kitty](https://sw.kovidgoyal.net/kitty/invocation/) as my terminal emulator
+- [fish](https://fishshell.com/) as my shell
+- [starship](https://starship.rs) as my prompt
 
-Check out the folder structure below:
-
-```
-.
-├── README.md
-├── bash_aliases
-├── bash_profile
-├── bashrc
-├── gitconfig
-├── hushlogin
-├── init.sh
-└── z.sh
-```
+I also use [lazygit](https://github.com/jesseduffield/lazygit) to interact with 
+git repos without straying too far from the command line.
