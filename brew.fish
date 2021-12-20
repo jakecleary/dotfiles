@@ -1,7 +1,3 @@
-# install homebrew using bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-# install software I use
 brew install \
     git \
     yarn \
@@ -25,9 +21,3 @@ brew install \
     todoist \
     visual-studio-code \
     whatsapp \
-
-# install oh-my-fish
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-
-# install NVM
-omf install nvm
