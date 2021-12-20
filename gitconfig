@@ -1,21 +1,12 @@
-[color]
-	ui = true
+[commit]
+	gpgsign = true
+[alias]
+	uncommit = reset HEAD^
+[gpg]
+	program = gpg
 [user]
 	email = shout@jakecleary.net
 	name = Jake Cleary
-[alias]
-	st = status
-	ad = add -A
-	co = commit -m
-	ca = commit -am
-	ch = checkout
-	br = checkout -b
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	chekcout = checkout
-[push]
-	default = simple
-[credential]
-	helper = osxkeychain
-[core]
-	editor = vim
-	excludesfile = /Users/jakecleary/.gitignore_global
+	signingkey = 37265B1E496C92A2
+[init]
+	defaultBranch = master
