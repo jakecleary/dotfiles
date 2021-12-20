@@ -1,0 +1,12 @@
+[commit]
+	gpgsign = true
+[alias]
+	uncommit = reset HEAD^
+[gpg]
+	program = gpg
+[user]
+	email = shout@jakecleary.net
+	name = Jake Cleary
+	signingkey = 37265B1E496C92A2
+[init]
+	defaultBranch = master
