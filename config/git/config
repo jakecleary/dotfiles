@@ -10,3 +10,5 @@
 	signingkey = 37265B1E496C92A2
 [init]
 	defaultBranch = master
+[core]
+	excludesFile = ~/.config/git/ignore
