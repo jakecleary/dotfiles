@@ -45,14 +45,14 @@ chmod +x install.fish
 ./install.fish
 ```
 
-5. Copy over files from /.config (take a backup of ~/.config first!)
+5. Copy over files from `config/` (take a backup of `~/.config` first!)
 
 ```
-cp -r .config ~/.config
+cp -r config ~/.config
 ```
 
-6. Copy over .gitconfig
+6. Copy over `gitconfig`
 
 ```
-cp .gitconfig ~/.gitconfig
+cp gitconfig ~/.gitconfig
 ```
